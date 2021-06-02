@@ -129,7 +129,7 @@ async def help(ctx):
 
 @client.command()
 async def info(ctx):
-  emb="**Info**\n**Owner:** "+owner_name+"\n**Version:** 1.0.0\n**Island:** "+island_name+"\n**Servers:** "+str(len(client.guilds))
+  emb="**Info**\n**Owner:** "+owner_name+"\n**Version:** 1.1.0\n**Island:** "+island_name+"\n**Servers:** "+str(len(client.guilds))
   embed=discord.Embed(title="I am a Discord Bot powered by Vaedz TreasureIslandBot.ACNH software", description=emb)
   await ctx.send("Here's a bit about me!")
   await ctx.send(embed=embed)
