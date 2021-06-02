@@ -42,7 +42,7 @@ def pather(guild_id, channel_id, filename, default_value):
 @client.event
 async def on_ready():
     global status
-    print("Online and connected as {} - {}".format(client.user.name, client.user.id))
+    print("Island Online on {} | ID {}".format(client.user.name, client.user.id))
     if status == "None":
       await client.change_presence(activity=discord.Game("Animal Crossing: New Horizons!"))
     else:
@@ -93,7 +93,7 @@ async def code(ctx):
     x="Dodo Code: "+dodo+"."
     await ctx.send(x)
   else:
-    if user_limit > members:
+    if int(user_limit) > int(members):
       x="Dodo Code: "+dodo+"."
       y=ctx.message.author.mention+" I sent you the Dodo Code via DM. If you did not recieve it you may have your DMs blocked."
       await ctx.send(y)
