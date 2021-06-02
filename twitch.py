@@ -85,7 +85,7 @@ async def help(ctx):
 
 @client.command(name='info')
 async def info(ctx):
-  x="**I am a Discord Bot powered by Vaedz TreasureIslandBot.ACNH software**\n\n**Info**\n**Owner:** "+owner_name+"\n**Version:** 1.0.0\n**Island:** "+island_name
+  x="**I am a Discord Bot powered by Vaedz TreasureIslandBot.ACNH software**\n\n**Info**\n**Owner:** "+owner_name+"\n**Version:** 1.1.0\n**Island:** "+island_name
   await ctx.send(x)
 
 @client.command(name="reset")
