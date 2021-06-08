@@ -26,19 +26,6 @@ import keep_alive
 client = commands.Bot(command_prefix=[prefix])
 client.remove_command('help')
 
-def pather(guild_id, channel_id, filename, default_value):
-    path = sys.path[0] + '/' + str(guild_id) + '/' + str(channel_id) + '/'
-
-    if not os.path.exists(str(guild_id) + '/' + str(channel_id)):
-        os.makedirs(str(guild_id) + '/' + str(channel_id))
-
-    if not os.path.isfile(path + filename):
-        with open(path + filename, 'w+') as file:
-            file.write(str(default_value))
-
-    return path
-
-
 @client.event
 async def on_ready():
     global status
