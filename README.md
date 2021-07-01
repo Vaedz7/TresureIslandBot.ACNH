@@ -1,3 +1,6 @@
+# **Important**
+Coming Soon - Optional CFW on Switch to run switch based features
+
 # **HOME**
 Welcome to the TreasureIslandBot.ACNH wiki!
 
